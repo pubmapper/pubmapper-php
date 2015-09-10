@@ -12,7 +12,8 @@ class PubMapperAPI {
     public function __construct() {
 
         $this->client = new Client([
-            'base_uri' => 'http://api.pubmapper.co'
+            'base_uri' => 'http://api.pubmapper.co',
+            'http_errors' => false
         ]);
 
     }
@@ -28,6 +29,10 @@ class PubMapperAPI {
         }
 
         $data = json_decode($data);
+
+        if (isset($data->error)) {
+            return FALSE;
+        }
 
         return $data;
     }

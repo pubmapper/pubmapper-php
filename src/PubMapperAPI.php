@@ -2,8 +2,6 @@
 
 namespace PubMapper\PubMapperAPI;
 
-require dirname(__FILE__).'/../vendor/autoload.php';
-
 use GuzzleHttp\Client;
 
 class PubMapperAPI {

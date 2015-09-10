@@ -1,0 +1,14 @@
+{
+    "name": "pubmapper/pubmapper-api",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.1@dev"
+    },
+    "authors": [
+        {
+            "name": "Iain Mullan",
+            "email": "iain.mullan@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

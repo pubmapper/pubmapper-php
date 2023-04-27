@@ -12,7 +12,7 @@ class PubMapperAPI {
     public function __construct() {
 
         $this->client = new Client([
-            'base_uri' => 'http://api.pubmapper.co'
+            'base_uri' => 'https://api.pubmapper.app'
         ]);
 
     }
